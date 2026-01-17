@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto - Mi Empresa</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Curso JavaScript Avanzado</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="presupuesto-container">
+        <h2>Solicitud de Presupuesto</h2>
+        
+        <form id="formulario-presupuesto">
+            
+            <section class="datos-contacto">
+                <h3>Datos de Contacto</h3>
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="15" required>
+                    <span class="error-message" id="error-nombre"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+                    <span class="error-message" id="error-apellidos"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" maxlength="9" required>
+                    <span class="error-message" id="error-telefono"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="error-email"></span>
+                </div>
+            </section>
+
+            <section class="configuracion-presupuesto">
+                <h3>Configura tu Proyecto</h3>
+
+                <div class="form-group">
+                    <label for="producto">Producto:</label>
+                    <select id="producto" name="producto" required>
+                        <option value="">Selecciona un producto</option>
+                        <option value="web-basica" data-precio="1000">Web Básica - €1,000</option>
+                        <option value="web-avanzada" data-precio="2500">Web Avanzada - €2,500</option>
+                        <option value="ecommerce" data-precio="5000">E-commerce - €5,000</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="plazo">Plazo (días):</label>
+                    <input type="number" id="plazo" name="plazo" min="1" max="365" value="30" required>
+                    <span id="info-descuento"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Extras:</label>
+                    <div class="extras">
+                        <label>
+                            <input type="checkbox" name="extras" value="seo" data-precio="300">
+                            SEO Básico (+€300)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="extras" value="hosting" data-precio="200">
+                            Hosting 1 año (+€200)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="extras" value="mantenimiento" data-precio="150">
+                            Mantenimiento mensual (+€150)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="extras" value="dominio" data-precio="50">
+                            Dominio personalizado (+€50)
+                        </label>
+                    </div>
+                </div>
+
+                
+                <div class="form-group presupuesto-final">
+                    <label for="total">Presupuesto Final:</label>
+                    <input type="text" id="total" name="total" readonly value="€0.00">
+                </div>
+            </section>
+
+<section class="condiciones">
+    <h3 class="sr-only">Condiciones de envío</h3>  
+    
+    <div class="form-group">
+        <div class="checkbox-container">
+            <input type="checkbox" id="condiciones" name="condiciones" required>
+            <label for="condiciones" class="checkbox-label">
+                He leído y acepto los <a href="terminos-servicio.html" target="_blank">términos de servicio</a>
+            </label>
+        </div>
+        <span class="error-message" id="error-condiciones"></span>
+    </div>
+
+    <div class="form-buttons">
+        <button type="submit" id="enviar">Solicitar Presupuesto</button>
+        <button type="reset" id="reset">Limpiar Formulario</button>
+    </div>
+</section>
+        </form>
+    </main>
+
+     <footer>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank"><img src="../img/facebook.webp" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="../img/twitter.webp" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="../img/instagram.webp" alt="Instagram"></a>
+        </div>
+        <div class="direccion">
+            <p>Centro de Formación en JavaScript - Avenida Cuidad del transporte, Castellón</p>
+        </div>
+        <div class="legal">
+            <a href="terminos-servicio.html">Términos de Servicio</a> | 
+            <a href="#">Política de Privacidad</a> | 
+            <a href="contacto.html">Contacto Académico</a>
+        </div>
+    </footer>
+
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>

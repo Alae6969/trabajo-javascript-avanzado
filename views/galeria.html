@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Curso JavaScript Avanzado</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Curso JavaScript Avanzado</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="galeria-container">
+        <h2>Proyectos de Nuestros Estudiantes</h2>
+        <p class="galeria-descripcion">Descubre los increíbles proyectos creados por nuestros alumnos después de completar el curso de JavaScript Avanzado</p>
+        
+        <div class="filtros-galeria">
+            <button class="filtro-btn active" data-categoria="todos">Todos los Proyectos</button>
+            <button class="filtro-btn" data-categoria="web">Aplicaciones Web</button>
+            <button class="filtro-btn" data-categoria="juegos">Juegos</button>
+            <button class="filtro-btn" data-categoria="tools">Herramientas</button>
+        </div>
+
+        <div class="galeria-grid" id="galeria-grid"></div>
+
+        <div id="loading" class="loading">
+          <p>Cargando proyectos...</p>
+        </div>
+
+        <button id="cargar-mas" class="btn-cargar-mas" style="display: none;">
+           <p> Ver Más Proyectos...</p>
+        </button>
+
+        <div class="info-tecnica">
+            <h3>Tecnologías JavaScript Utilizadas en Estos Proyectos</h3>
+            <div class="tecnologias-lista">
+                <div class="tecnologia-item">
+                    <h4>🔄 APIs y Fetch</h4>
+                    <p>Conexión con servicios externos y manejo de datos asíncronos</p>
+                </div>
+                <div class="tecnologia-item">
+                    <h4>🎯 Manipulación del DOM</h4>
+                    <p>Creación dinámica de elementos y actualización en tiempo real</p>
+                </div>
+                <div class="tecnologia-item">
+                    <h4>💾 Almacenamiento Local</h4>
+                    <p>LocalStorage y SessionStorage para persistencia de datos</p>
+                </div>
+                <div class="tecnologia-item">
+                    <h4>🎨 Event Listeners</h4>
+                    <p>Gestión de interacciones del usuario y respuestas inmediatas</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank"><img src="../img/facebook.webp" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="../img/twitter.webp" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="../img/instagram.webp" alt="Instagram"></a>
+        </div>
+        <div class="direccion">
+            <p>Centro de Formación en JavaScript - Avenida Cuidad del transporte, Castellón</p>
+        </div>
+        <div class="legal">
+            <a href="#">Términos de Servicio</a> | 
+            <a href="#">Política de Privacidad</a> | 
+            <a href="contacto.html">Contacto Académico</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="../js/galeria.js"></script>
+</body>
+</html>

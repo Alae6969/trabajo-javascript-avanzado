@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Curso JavaScript Avanzado</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Curso JavaScript Avanzado</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacto-container">
+        <h2>Contacto</h2>
+        
+        <div class="contacto-info">
+            <div class="info-detalles">
+                <h3>Información de Contacto</h3>
+                <p><strong>📍 Dirección:</strong><br>
+                Avenida Cuidad de Transporte<br>
+                12068 Castellón de la Plana, España</p>
+                
+                <p><strong>📞 Teléfono:</strong><br>
+                +34 964 12 34 56</p>
+                
+                <p><strong>📧 Email:</strong><br>
+                info@cursojavascript.es</p>
+                
+                <p><strong>🕒 Horario:</strong><br>
+                Lunes - Viernes: 9:00 - 18:00<br>
+                Sábados: 10:00 - 14:00</p>
+            </div>
+            
+            <div class="mapa-container">
+                <h3>Encuéntranos en Castellón</h3>
+                <div id="mapa"></div>
+                <div class="calculadora-ruta">
+                    <h4>Calcular Ruta</h4>
+                    <input type="text" id="origen" placeholder="Escribe tu dirección en Castellón...">
+                    <button type="button" id="calcular-ruta">Calcular Ruta</button>
+                    <div id="info-ruta"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank"><img src="../img/facebook.webp" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="../img/twitter.webp" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="../img/instagram.webp" alt="Instagram"></a>
+        </div>
+        <div class="direccion">
+            <p>Centro de Formación en JavaScript - Castellón de la Plana</p>
+        </div>
+        <div class="legal">
+            <a href="#">Términos de Servicio</a> | 
+            <a href="#">Política de Privacidad</a> | 
+            <a href="contacto.html">Contacto Académico</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

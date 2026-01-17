@@ -1,0 +1,22 @@
+{
+    "noticias": [
+        {
+            "titulo": "Nuevo Framework JavaScript",
+            "fecha": "2024-01-15",
+            "contenido": "Hemos lanzado nuestro nuevo framework para desarrollo web moderno.",
+            "imagen": "images/noticia1.jpg"
+        },
+        {
+            "titulo": "Curso Avanzado de JavaScript",
+            "fecha": "2024-01-10",
+            "contenido": "Inscripciones abiertas para nuestro curso de JavaScript avanzado.",
+            "imagen": "images/noticia2.jpg"
+        },
+        {
+            "titulo": "Premio al Mejor Desarrollo Web",
+            "fecha": "2024-01-05",
+            "contenido": "Hemos recibido el premio al mejor desarrollo web del año.",
+            "imagen": "images/noticia3.jpg"
+        }
+    ]
+}
